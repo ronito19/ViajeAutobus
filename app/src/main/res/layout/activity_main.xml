@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_autobus"
+        android:layout_width="226dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/autobus_negro" />
+
+    <EditText
+        android:id="@+id/edt_pasajeros"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints="no"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/numero_de_viajeros"
+        android:inputType="number|textPersonName"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_autobus" />
+
+    <EditText
+        android:id="@+id/edt_precio"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints="no"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/precio_viaje"
+        android:inputType="textPersonName|numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_pasajeros"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/edt_pasajeros"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pasajeros"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/bt_mostrar_ingresos"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:onClick="mostrarIngresos"
+        android:padding="10dp"
+        android:text="@string/mostrar_ingresos"
+        android:textColor="#039BE5"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/edt_precio"
+        app:layout_constraintStart_toStartOf="@+id/edt_precio"
+        app:layout_constraintTop_toBottomOf="@+id/edt_precio" />
+
+    <TextView
+        android:id="@+id/tx_mostrar_ingresos"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_mostrar_ingresos"
+        app:layout_constraintStart_toStartOf="@+id/bt_mostrar_ingresos"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mostrar_ingresos" />
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="44dp"
+        android:background="@color/purple_500"
+        android:text="@string/siguiente"
+        android:onClick="siguiente"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_mostrar_ingresos"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

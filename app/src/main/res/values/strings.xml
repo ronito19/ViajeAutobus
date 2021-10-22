@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ViajeAutobus</string>
+    <string name="numero_de_viajeros">Numero de Viajeros</string>
+    <string name="precio_viaje">Precio Viaje</string>
+    <string name="mostrar_ingresos">Mostrar Ingresos</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="todo">TODO</string>
+
+</resources>
